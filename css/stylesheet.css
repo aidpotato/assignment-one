@@ -1,10 +1,31 @@
+html, body{
+    height: 100%;
+    
+}
+
 body{
     background-color: linen;
     display: flex;
+    flex-direction: row;
+    color: #256993;
 }
+
+.container{
+    flex: 1;
+}
+
+.bottem{
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 header{
     background-color: floralwhite;
+    flex-basis: 20%;
 }
 
 h1{
@@ -13,7 +34,10 @@ h1{
 
 main{
     display: grid;
+    grid-template-columns: 1600px ;
+    grid-template-rows: 300px;
     padding-left: 1cm;
+
 }
 
 .main_header{
@@ -26,6 +50,44 @@ nav{
     text-align: right;
 }
 
+.textmain{
+    display: grid;
+}
+
+.top_button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottem_button{
+    display: flex;
+    justify-content: flex-end;
+}
+
 footer{
+    display: flex;
+    position: relative;
     text-align: center;
+    bottom: -300px;
+    flex-direction: column;
+}
+
+.img_class{
+    display: flex;
+}
+
+.note{
+    background-color: #375F68;
+}
+
+.dark_theme{
+    background-color: #56536A;
+}
+
+.save{
+    background-color: #375F68;
+}
+
+.cancel{
+    background-color: #9B332C;
 }

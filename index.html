@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment 1</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
+    <header class="container">
             <section>
                 <h1>My Notes</h1>
                 <ul>
@@ -18,7 +21,7 @@
             </section>
     </header>   
 
-    <main>
+    <main class="container">
         <section class="main_header">
             <h1>Take better notes</h1>
             <nav>
@@ -27,33 +30,37 @@
             </nav>
         </section>
 
-        <section class="text_main">
-            <button class="note" type="button">
-                New Note
-            </button>
-            <button class="dark_theme" type="button">
-                Dark Theme
-            </button>
-            <textarea name="story" id="story" rows="6" cols="55">
-                this is placeholder
-            </textarea>
-            <button class="save" type="button">
-                save
-            </button>
-            <button class="cancel" type="button">
-                cancel
-            </button>
+        <section class="textmain">
+            <section class="top_button">  
+                <button class="note" type="button">
+                    New Note
+                </button>
+                <button class="dark_theme" type="button">
+                    Dark Theme
+                </button>
+            </section>  
+                <textarea name="story" id="story" rows="18" cols="55">
+                    this is placeholder
+                </textarea>
+            <section class="bottem_button">    
+                <button class="save" type="button">
+                    save
+                </button>
+                <button class="cancel" type="button">
+                    cancel
+                </button>
+            </section>    
         </section>
-    
-        <footer>
-            <h2>keep in touch</h2>
-            <img src="photos/linkedin_circle_color-512.webp" alt="linkedin circle" width="40px" height="40px">
-            <img src="photos/Internet_Line-02-512.webp" alt="gloabe with curser clicking on it" width="40px" height="40px">
-        </footer>
-    
     </main>
 
 
+    <footer class="container bottem">
+        <h2>keep in touch</h2>
+        <img class="img_class" src="photos/linkedin_circle_color-512.webp" alt="linkedin circle" width="40px" height="40px">
+        <img class="img_class" src="photos/Internet_Line-02-512.webp" alt="gloabe with curser clicking on it" width="40px" height="40px">
+    </footer>
+
 </body>
+
 
 </html>
