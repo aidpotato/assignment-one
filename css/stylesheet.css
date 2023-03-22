@@ -92,3 +92,21 @@ footer{
 .cancel{
     background-color: #9B332C;
 }
+
+@media (max-width: 600px){ 
+    body{
+        display: grid;
+        grid-template-columns: 600px;
+        grid-template-rows: 200px;
+    }
+
+    main{
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+
+    }
+    nav{
+        text-align: left;
+    }
+}
