@@ -1,5 +1,13 @@
 body{
-    background-color: linen;
+    background-color: linen
+}
+
+header{
+    display:flex
+}
+
+main{
+    display: flex;
 }
 
 h1{
