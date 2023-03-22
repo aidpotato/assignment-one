@@ -5,6 +5,7 @@ html, body{
 
 body{
     background-color: linen;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
     color: #256993;
