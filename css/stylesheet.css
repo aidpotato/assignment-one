@@ -1,15 +1,31 @@
 body{
-    background-color: linen
-}
-
-header{
-    display:flex
-}
-
-main{
+    background-color: linen;
     display: flex;
 }
 
+header{
+    background-color: floralwhite;
+}
+
 h1{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    padding-left: 1cm;
+}
+
+.main_header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+nav{
+    text-align: right;
+}
+
+footer{
     text-align: center;
 }
