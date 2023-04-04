@@ -17,3 +17,39 @@ function dark_mode(){
     }
 button.addEventListener('click', dark_mode)
 
+const cancel_button = document.querySelector('#cancel_button')
+
+function story_hide(){
+    console.log('monkey')
+    var x = document.getElementById('story', 'cancel_button', 'save_button')
+    if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+}
+
+function save_hide(){
+    console.log('monkey')
+    var x = document.getElementById('save_button')
+    if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    
+}
+
+function cancel_hide(){
+    console.log('monkey')
+    var x = document.getElementById('cancel_button')
+    if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    
+}
+cancel_button.addEventListener('click', cancel_hide)
+cancel_button.addEventListener('click', story_hide)
+cancel_button.addEventListener('click', save_hide)
