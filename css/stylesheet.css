@@ -104,6 +104,16 @@ footer{
 .cancel{
     background-color: #9B332C;
 }
+/* 
+javascript */
+.head_background{
+    background-color: #56536A;
+}
+
+.text_back{
+    background-color: dimgray;
+    color: white;
+}
 
 @media (max-width: 600px){ 
     body{
