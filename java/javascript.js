@@ -73,3 +73,31 @@ newNote_Text.addEventListener('click', showCancelbutton)
 newNote_Text.addEventListener('click', showSavebutton)
 newNote_Text.addEventListener('click', showStorybutton)
 newNote_Text.addEventListener('click', newNote_removetext)
+
+//save button//
+let notesArray = [{title:'note one', body:'this is my first note'},{title:'note two', body:'this is my second note'}]
+const saveProp = document.querySelector('#save_button');
+// let titles = notesArray.map(note => note.title);
+
+
+function checkforcontent(){
+  let noteTitle = prompt('what is the title of your note');
+  let newBodytext = document.getElementById('story');
+  let newBody = newBodytext.value;
+  let newTitle = {title: noteTitle, body: newBody};
+  notesArray.push(newTitle);
+  console.log(notesArray)
+
+  let list = document.getElementById('save_append');
+  let titleItem = document.createElement("li");
+  titleItem.textContent = noteTitle
+  list.appendChild(titleItem)
+
+}
+
+// let list = document.getElementById('save_append');
+
+
+saveProp.addEventListener('click', checkforcontent)
+
+
