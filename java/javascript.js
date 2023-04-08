@@ -95,9 +95,19 @@ function checkforcontent(){
 
 }
 
-// let list = document.getElementById('save_append');
-
+//see the body of the titles on the sidebar
 
 saveProp.addEventListener('click', checkforcontent)
 
+let list = document.getElementById('save_append')
+let newBodytext = document.getElementById('story');
 
+
+list.addEventListener("click", function(event) {
+  let listItem = event.target;
+  if (listItem.tagName === "LI") {
+    let index = Array.from(list.children).indexOf(listItem);
+    let body = notesArray[index].body;
+    newBodytext.value = body;
+  }
+});
